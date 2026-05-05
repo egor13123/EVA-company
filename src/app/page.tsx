@@ -154,8 +154,8 @@ export default function HomePage() {
         <Reveal delay={0.2} className="mt-16">
           <div className="relative aspect-[16/7] overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2400&q=80"
-              alt="Стройматериалы на складе"
+              src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=2400&q=80"
+              alt="Строительство и инфраструктура"
               fill
               sizes="100vw"
               className="img-mono object-cover"
