@@ -6,17 +6,17 @@
   <g transform="translate(178 22) rotate(45)"><rect x="-2.4" y="-2.4" width="4.8" height="4.8" fill="#0a0a0a"/></g>
   <g transform="translate(22 178) rotate(45)"><rect x="-2.4" y="-2.4" width="4.8" height="4.8" fill="#0a0a0a"/></g>
   <g transform="translate(178 178) rotate(45)"><rect x="-2.4" y="-2.4" width="4.8" height="4.8" fill="#0a0a0a"/></g>
-  <text x="100" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="500" fill="#0a0a0a" letter-spacing="1.2">EST.</text>
-  <line x1="100" y1="56" x2="100" y2="84" stroke="#0a0a0a" stroke-width="0.6"/>
-  <circle cx="100" cy="84" r="0.9" fill="#0a0a0a"/>
-  <text x="100" y="125" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="42" font-weight="500" fill="#0a0a0a" letter-spacing="6">EVA</text>
-  <line x1="68" y1="143" x2="92" y2="143" stroke="#0a0a0a" stroke-width="0.6"/>
-  <line x1="108" y1="143" x2="132" y2="143" stroke="#0a0a0a" stroke-width="0.6"/>
-  <g transform="translate(100 143) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="#0a0a0a"/></g>
-  <g transform="translate(70 143) rotate(45)"><rect x="-1" y="-1" width="2" height="2" fill="#0a0a0a"/></g>
-  <g transform="translate(130 143) rotate(45)"><rect x="-1" y="-1" width="2" height="2" fill="#0a0a0a"/></g>
-  <text x="100" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="400" fill="#0a0a0a" letter-spacing="3.5">COMPANY</text>
-  <circle cx="94" cy="172" r="1" fill="#0a0a0a"/>
-  <circle cx="100" cy="172" r="1" fill="#0a0a0a"/>
-  <circle cx="106" cy="172" r="1" fill="#0a0a0a"/>
+  <circle cx="100" cy="46" r="1" fill="#0a0a0a"/>
+  <line x1="100" y1="46" x2="100" y2="84" stroke="#0a0a0a" stroke-width="0.7"/>
+  <circle cx="100" cy="84" r="1" fill="#0a0a0a"/>
+  <text x="100" y="128" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="44" font-weight="600" fill="#0a0a0a" letter-spacing="6">ЕВА</text>
+  <line x1="68" y1="146" x2="92" y2="146" stroke="#0a0a0a" stroke-width="0.6"/>
+  <line x1="108" y1="146" x2="132" y2="146" stroke="#0a0a0a" stroke-width="0.6"/>
+  <g transform="translate(100 146) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="#0a0a0a"/></g>
+  <g transform="translate(70 146) rotate(45)"><rect x="-1" y="-1" width="2" height="2" fill="#0a0a0a"/></g>
+  <g transform="translate(130 146) rotate(45)"><rect x="-1" y="-1" width="2" height="2" fill="#0a0a0a"/></g>
+  <text x="100" y="164" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="400" fill="#0a0a0a" letter-spacing="6">ТСК</text>
+  <circle cx="94" cy="176" r="1" fill="#0a0a0a"/>
+  <circle cx="100" cy="176" r="1" fill="#0a0a0a"/>
+  <circle cx="106" cy="176" r="1" fill="#0a0a0a"/>
 </svg>

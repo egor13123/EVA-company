@@ -27,16 +27,18 @@ export default function Header() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  const onDarkHero = pathname === "/" && !scrolled && !open;
+
   return (
     <header
-      className={`sticky top-0 z-50 transition-colors duration-500 ease-soft ${
-        scrolled
-          ? "bg-paper/85 backdrop-blur-md border-b border-line"
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-500 ease-soft ${
+        scrolled || open
+          ? "bg-paper/90 backdrop-blur-md border-b border-line"
           : "bg-transparent"
       }`}
     >
-      <div className="container-x flex items-center justify-between py-5">
-        <Logo size="sm" />
+      <div className="container-x flex items-center justify-between py-4 md:py-5">
+        <Logo size="sm" inverted={onDarkHero} />
 
         <nav className="hidden lg:flex items-center gap-10">
           {NAV.map((item) => {
@@ -45,7 +47,9 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-[12px] uppercase tracking-widest text-ink"
+                className={`relative text-[12px] uppercase tracking-widest transition-colors duration-500 ${
+                  onDarkHero ? "text-paper" : "text-ink"
+                }`}
               >
                 <span className={active ? "opacity-100" : "opacity-70 hover:opacity-100 transition-opacity"}>
                   {item.label}
@@ -53,7 +57,9 @@ export default function Header() {
                 {active && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute -bottom-2 left-0 right-0 h-px bg-ink"
+                    className={`absolute -bottom-2 left-0 right-0 h-px ${
+                      onDarkHero ? "bg-paper" : "bg-ink"
+                    }`}
                     transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                   />
                 )}
@@ -63,7 +69,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="mailto:office@eva-tsk.ru" className="text-[12px] uppercase tracking-widest link-underline">
+          <a
+            href="mailto:office@eva-tsk.ru"
+            className={`text-[12px] uppercase tracking-widest link-underline transition-colors duration-500 ${
+              onDarkHero ? "text-paper" : "text-ink"
+            }`}
+          >
             office@eva-tsk.ru
           </a>
         </div>
@@ -75,15 +86,21 @@ export default function Header() {
         >
           <motion.span
             animate={open ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-px bg-ink origin-center"
+            className={`block w-6 h-px origin-center transition-colors duration-500 ${
+              onDarkHero ? "bg-paper" : "bg-ink"
+            }`}
           />
           <motion.span
             animate={open ? { opacity: 0 } : { opacity: 1 }}
-            className="block w-6 h-px bg-ink"
+            className={`block w-6 h-px transition-colors duration-500 ${
+              onDarkHero ? "bg-paper" : "bg-ink"
+            }`}
           />
           <motion.span
             animate={open ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-px bg-ink origin-center"
+            className={`block w-6 h-px origin-center transition-colors duration-500 ${
+              onDarkHero ? "bg-paper" : "bg-ink"
+            }`}
           />
         </button>
       </div>

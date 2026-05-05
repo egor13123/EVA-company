@@ -8,91 +8,97 @@ import Reveal from "@/components/Reveal";
 export default function HomePage() {
   return (
     <>
-      <section className="relative">
-        <div className="container-x pt-24 md:pt-32 pb-20 md:pb-32 grid lg:grid-cols-12 gap-12 items-end">
-          <div className="lg:col-span-8">
-            <motion.p
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="eyebrow"
-            >
-              ООО «ТСК ЕВА» · Est. 2025
-            </motion.p>
+      <section className="relative isolate min-h-[100svh] flex flex-col overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.06, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+          className="absolute inset-0 -z-10"
+        >
+          <Image
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2400&q=80"
+            alt="Строительная инфраструктура"
+            fill
+            priority
+            sizes="100vw"
+            className="img-mono object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-ink/35 via-ink/65 to-ink/95" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink/40 via-transparent to-transparent" />
+        </motion.div>
 
-            <h1 className="display text-[clamp(2.8rem,9vw,8rem)] mt-8">
-              {[
-                "Тендерные",
-                "закупки",
-                <span key="ital" className="italic font-light">в торговле</span>,
-                "и строительстве",
-              ].map((line, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, y: 32 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 1,
-                    ease: [0.22, 1, 0.36, 1],
-                    delay: 0.15 + i * 0.1,
-                  }}
-                  className="block"
-                >
-                  {line}
-                </motion.span>
-              ))}
-            </h1>
-          </div>
+        <div className="container-x flex-1 flex flex-col justify-center text-paper pt-28 md:pt-32 pb-12">
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="eyebrow !text-paper/70"
+          >
+            ООО «ТСК ЕВА» · Est. 2025
+          </motion.p>
+
+          <h1 className="display text-[clamp(3rem,11vw,9.5rem)] mt-8 leading-[0.95] max-w-[16ch]">
+            {[
+              "Тендерные закупки",
+              <span key="ital" className="italic font-light">в торговле</span>,
+              "и строительстве",
+            ].map((line, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 1,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: 0.2 + i * 0.1,
+                }}
+                className="block"
+              >
+                {line}
+              </motion.span>
+            ))}
+          </h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
+            className="mt-12 md:mt-14 text-xl md:text-2xl lg:text-[28px] text-paper/90 leading-[1.45] max-w-3xl"
+          >
+            Ваш надёжный бизнес-партнёр для&nbsp;поставок любой сложности.
+            Успешно участвуем в&nbsp;тендерах по&nbsp;44-ФЗ и&nbsp;223-ФЗ.
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.6 }}
-            className="lg:col-span-4 lg:pb-6"
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.85 }}
+            className="mt-10 md:mt-12 flex flex-wrap gap-4"
           >
-            <p className="text-lg text-ink/80 leading-relaxed max-w-md">
-              Ваш надёжный бизнес-партнёр для поставок любой сложности.
-              Успешно участвуем в тендерах по 44-ФЗ и 223-ФЗ.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/services" className="btn-ink">
-                Услуги
-                <span aria-hidden>→</span>
-              </Link>
-              <Link href="/partnership" className="btn-ghost">
-                Сотрудничество
-              </Link>
-            </div>
+            <Link href="/services" className="btn-paper-lg">
+              Услуги
+              <span aria-hidden>→</span>
+            </Link>
+            <Link href="/partnership" className="btn-outline-lg-light">
+              Сотрудничество
+            </Link>
           </motion.div>
         </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 1.04 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="container-x"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 1.1 }}
+          className="container-x pb-12 md:pb-16"
         >
-          <div className="relative aspect-[16/8] overflow-hidden">
-            <Image
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2400&q=80"
-              alt="Строительная инфраструктура"
-              fill
-              priority
-              sizes="100vw"
-              className="img-mono object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" />
-            <div className="absolute bottom-8 right-8 hidden md:block">
-              <div className="border border-paper/40 bg-ink/60 backdrop-blur-sm text-paper p-6 max-w-xs">
-                <p className="text-[11px] uppercase tracking-widest text-paper/70">
-                  Поставки и тендеры
-                </p>
-                <p className="mt-3 text-sm leading-relaxed">
-                  Полный цикл сопровождения закупок — от подачи заявки до
-                  исполнения контракта.
-                </p>
-              </div>
-            </div>
+          <div className="md:ml-auto md:max-w-md lg:max-w-[480px] border border-paper/30 bg-ink/55 backdrop-blur-md p-8 md:p-10">
+            <p className="text-[13px] md:text-sm uppercase tracking-[0.25em] text-paper/75">
+              Поставки и тендеры
+            </p>
+            <p className="mt-5 text-lg md:text-xl text-paper leading-[1.5]">
+              Полный цикл сопровождения закупок — от&nbsp;подачи заявки
+              до&nbsp;исполнения контракта.
+            </p>
           </div>
         </motion.div>
       </section>
@@ -129,7 +135,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal className="lg:col-span-6 lg:col-start-7" delay={0.1}>
             <p className="text-lg leading-relaxed text-ink/80">
-              EVA Company — компания, специализирующаяся на тендерных закупках
+              ЕВА ТСК — компания, специализирующаяся на тендерных закупках
               в сферах торговли и строительства. Мы выстраиваем процессы так,
               чтобы клиент получал результат: вовремя, по контракту, без рисков.
             </p>

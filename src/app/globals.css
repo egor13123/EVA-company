@@ -78,6 +78,24 @@
     background-color: var(--ink);
     color: var(--bg);
   }
+  .btn-paper-lg {
+    @apply inline-flex items-center gap-3 bg-paper text-ink px-9 py-5 text-[13px] uppercase;
+    letter-spacing: 0.22em;
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1), background-color 300ms;
+  }
+  .btn-paper-lg:hover {
+    transform: translateY(-2px);
+    background-color: #ffffff;
+  }
+  .btn-outline-lg-light {
+    @apply inline-flex items-center gap-3 border border-paper/80 text-paper px-9 py-5 text-[13px] uppercase;
+    letter-spacing: 0.22em;
+    transition: background-color 500ms cubic-bezier(0.22, 1, 0.36, 1), color 500ms;
+  }
+  .btn-outline-lg-light:hover {
+    background-color: var(--bg);
+    color: var(--ink);
+  }
   .frame-corner {
     position: absolute;
     width: 18px;

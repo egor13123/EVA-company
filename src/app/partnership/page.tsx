@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 
 export const metadata = {
-  title: "Сотрудничество — EVA Company",
+  title: "Сотрудничество — ЕВА ТСК",
   description:
     "Совместные проекты с производителями и импортёрами. Вакансии для специалистов по тендерам 44-ФЗ и 223-ФЗ.",
 };

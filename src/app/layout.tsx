@@ -19,12 +19,12 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "EVA Company — Тендерные закупки в торговле и строительстве",
+  title: "ЕВА ТСК — Тендерные закупки в торговле и строительстве",
   description:
     "ООО «ТСК ЕВА» — ваш надёжный бизнес-партнёр для поставок любой сложности. Сопровождение тендеров по 44-ФЗ и 223-ФЗ.",
   metadataBase: new URL("https://eva-tsk.ru"),
   openGraph: {
-    title: "EVA Company",
+    title: "ЕВА ТСК",
     description:
       "Тендерные закупки в сфере торговли и строительства. Поставки любой сложности.",
     type: "website",

@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 
 export const metadata = {
-  title: "Услуги — EVA Company",
+  title: "Услуги — ЕВА ТСК",
   description:
     "Ваш надёжный бизнес-партнёр для поставок любой сложности. Успешно участвуем в тендерах по 44-ФЗ и 223-ФЗ.",
 };

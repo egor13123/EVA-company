@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Контакты — EVA Company",
+  title: "Контакты — ЕВА ТСК",
   description: "ООО «ТСК ЕВА» — реквизиты и контактная информация.",
 };
 

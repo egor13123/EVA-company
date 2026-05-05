@@ -11,13 +11,13 @@ export default function Logo({
   inverted = false,
   withWordmark = false,
 }: Props) {
-  const dim = size === "sm" ? 48 : size === "lg" ? 96 : 64;
+  const dim = size === "sm" ? 72 : size === "lg" ? 144 : 96;
   const stroke = inverted ? "#fafaf7" : "#0a0a0a";
 
   return (
     <Link
       href="/"
-      aria-label="EVA Company — главная"
+      aria-label="ЕВА ТСК — главная"
       className="inline-flex items-center gap-3 group"
     >
       <svg
@@ -44,67 +44,56 @@ export default function Logo({
           </g>
         ))}
 
-        {/* EST. + vertical line */}
-        <text
-          x="100"
-          y="50"
-          textAnchor="middle"
-          fontFamily="var(--font-sans), system-ui, sans-serif"
-          fontSize="9"
-          fontWeight="500"
-          fill={stroke}
-          letterSpacing="1.2"
-        >
-          EST.
-        </text>
-        <line x1="100" y1="56" x2="100" y2="84" stroke={stroke} strokeWidth="0.6" />
-        <circle cx="100" cy="84" r="0.9" fill={stroke} />
+        {/* Top decorative element: dot · line · dot */}
+        <circle cx="100" cy="46" r="1" fill={stroke} />
+        <line x1="100" y1="46" x2="100" y2="84" stroke={stroke} strokeWidth="0.7" />
+        <circle cx="100" cy="84" r="1" fill={stroke} />
 
-        {/* EVA wordmark */}
+        {/* ЕВА wordmark */}
         <text
           x="100"
-          y="125"
+          y="128"
           textAnchor="middle"
           fontFamily="var(--font-serif), 'Cormorant Garamond', Georgia, serif"
-          fontSize="42"
-          fontWeight="500"
+          fontSize="44"
+          fontWeight="600"
           fill={stroke}
           letterSpacing="6"
         >
-          EVA
+          ЕВА
         </text>
 
         {/* Divider with center diamond and side accents */}
-        <line x1="68" y1="143" x2="92" y2="143" stroke={stroke} strokeWidth="0.6" />
-        <line x1="108" y1="143" x2="132" y2="143" stroke={stroke} strokeWidth="0.6" />
-        <g transform="translate(100 143) rotate(45)">
+        <line x1="68" y1="146" x2="92" y2="146" stroke={stroke} strokeWidth="0.6" />
+        <line x1="108" y1="146" x2="132" y2="146" stroke={stroke} strokeWidth="0.6" />
+        <g transform="translate(100 146) rotate(45)">
           <rect x="-2" y="-2" width="4" height="4" fill={stroke} />
         </g>
-        <g transform="translate(70 143) rotate(45)">
+        <g transform="translate(70 146) rotate(45)">
           <rect x="-1" y="-1" width="2" height="2" fill={stroke} />
         </g>
-        <g transform="translate(130 143) rotate(45)">
+        <g transform="translate(130 146) rotate(45)">
           <rect x="-1" y="-1" width="2" height="2" fill={stroke} />
         </g>
 
-        {/* COMPANY */}
+        {/* ТСК */}
         <text
           x="100"
-          y="160"
+          y="164"
           textAnchor="middle"
           fontFamily="var(--font-sans), system-ui, sans-serif"
-          fontSize="10"
+          fontSize="11"
           fontWeight="400"
           fill={stroke}
-          letterSpacing="3.5"
+          letterSpacing="6"
         >
-          COMPANY
+          ТСК
         </text>
 
         {/* Bottom dots */}
-        <circle cx="94" cy="172" r="1" fill={stroke} />
-        <circle cx="100" cy="172" r="1" fill={stroke} />
-        <circle cx="106" cy="172" r="1" fill={stroke} />
+        <circle cx="94" cy="176" r="1" fill={stroke} />
+        <circle cx="100" cy="176" r="1" fill={stroke} />
+        <circle cx="106" cy="176" r="1" fill={stroke} />
       </svg>
 
       {withWordmark && (
@@ -113,14 +102,14 @@ export default function Logo({
             className={`display text-2xl ${inverted ? "text-paper" : "text-ink"}`}
             style={{ letterSpacing: "0.18em" }}
           >
-            EVA
+            ЕВА
           </span>
           <span
             className={`text-[9px] uppercase tracking-[0.3em] mt-1 ${
               inverted ? "text-paper/70" : "text-ash"
             }`}
           >
-            Company
+            ТСК
           </span>
         </span>
       )}
