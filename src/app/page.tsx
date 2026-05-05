@@ -40,7 +40,7 @@ export default function HomePage() {
           <h1 className="display text-[clamp(3rem,11vw,9.5rem)] mt-8 leading-[0.95] max-w-[16ch]">
             {[
               "Тендерные закупки",
-              <span key="ital" className="italic font-light">в торговле</span>,
+              "в торговле",
               "и строительстве",
             ].map((line, i) => (
               <motion.span
