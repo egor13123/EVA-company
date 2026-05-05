@@ -126,10 +126,12 @@ export default function HomePage() {
       </section>
 
       <section className="container-x mt-32 md:mt-48">
-        <div className="grid lg:grid-cols-12 gap-12">
+        <Reveal>
+          <p className="eyebrow">О компании</p>
+        </Reveal>
+        <div className="mt-10 md:mt-14 grid lg:grid-cols-12 gap-12 items-start">
           <Reveal className="lg:col-span-5">
-            <p className="eyebrow">О компании</p>
-            <h2 className="display text-5xl md:text-6xl mt-6">
+            <h2 className="display text-5xl md:text-6xl">
               Поставки, на&nbsp;которые можно положиться
             </h2>
           </Reveal>
