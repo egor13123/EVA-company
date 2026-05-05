@@ -65,11 +65,11 @@ export default function ExperiencePage() {
         <Reveal>
           <div className="border-t border-line pt-10 flex flex-wrap items-center justify-between gap-6">
             <h3 className="display text-3xl md:text-4xl max-w-2xl">
-              Хотите стать одним из&nbsp;наших успешных контрактов?
+              Перейти к&nbsp;другим разделам
             </h3>
             <div className="flex gap-3">
-              <Link href="/contact" className="btn-ink">Связаться</Link>
-              <Link href="/services" className="btn-ghost">Услуги</Link>
+              <Link href="/services" className="btn-ink">Услуги</Link>
+              <Link href="/about" className="btn-ghost">О компании</Link>
             </div>
           </div>
         </Reveal>

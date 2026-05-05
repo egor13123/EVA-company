@@ -169,7 +169,7 @@ export default function HomePage() {
           <Reveal>
             <p className="eyebrow">Направления</p>
             <h2 className="display text-5xl md:text-6xl mt-6 max-w-[18ch]">
-              Что&nbsp;мы делаем для&nbsp;клиентов
+              Сферы&nbsp;деятельности компании
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -238,22 +238,22 @@ export default function HomePage() {
           <span className="frame-corner br text-ink" />
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <Reveal className="lg:col-span-7">
-              <p className="eyebrow">Сотрудничество</p>
+              <p className="eyebrow">Разделы сайта</p>
               <h2 className="display text-4xl md:text-6xl mt-6">
-                Готовы обсудить ваш проект?
+                Подробнее о&nbsp;компании
               </h2>
               <p className="mt-6 text-lg text-ink/70 max-w-xl leading-relaxed">
-                Открыты к работе с производителями, импортёрами и опытными
-                специалистами по тендерам.
+                Развёрнутая информация о подходе, опыте, направлениях работы
+                и контактах ЕВА ТСК.
               </p>
             </Reveal>
             <Reveal className="lg:col-span-5 flex flex-wrap gap-3 lg:justify-end" delay={0.1}>
-              <Link href="/contact" className="btn-ink">
-                Связаться
+              <Link href="/about" className="btn-ink">
+                О компании
                 <span aria-hidden>→</span>
               </Link>
-              <Link href="/partnership" className="btn-ghost">
-                Подробнее
+              <Link href="/experience" className="btn-ghost">
+                Наш опыт
               </Link>
             </Reveal>
           </div>

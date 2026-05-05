@@ -13,7 +13,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Контакты"
         title={"Свяжитесь\nс нами"}
-        lead="Готовы обсудить ваш проект, предложить решение и взять процесс на сопровождение."
+        lead="Реквизиты компании, юридическая информация и форма для связи."
       />
 
       <section className="container-x grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">

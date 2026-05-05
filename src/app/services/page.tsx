@@ -26,7 +26,7 @@ export default function ServicesPage() {
             </p>
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <Link href="/contact" className="btn-ink">
-                Обсудить задачу
+                Контакты
                 <span aria-hidden>→</span>
               </Link>
             </div>
@@ -109,10 +109,10 @@ export default function ServicesPage() {
         <Reveal>
           <div className="border-t border-line pt-10 flex flex-wrap items-center justify-between gap-6">
             <h3 className="display text-3xl md:text-4xl max-w-2xl">
-              Расскажите задачу — предложим путь её решения
+              Перейти к&nbsp;другим разделам
             </h3>
             <div className="flex gap-3">
-              <Link href="/contact" className="btn-ink">Связаться</Link>
+              <Link href="/experience" className="btn-ink">Наш опыт</Link>
               <Link href="/partnership" className="btn-ghost">Сотрудничество</Link>
             </div>
           </div>

@@ -140,10 +140,10 @@ export default function AboutPage() {
         <Reveal>
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
             <h3 className="display text-3xl md:text-4xl">
-              Хотите познакомиться ближе?
+              Перейти к&nbsp;другим разделам
             </h3>
             <div className="flex gap-3">
-              <Link href="/contact" className="btn-ink">Связаться</Link>
+              <Link href="/experience" className="btn-ink">Наш опыт</Link>
               <Link href="/services" className="btn-ghost">Услуги</Link>
             </div>
           </div>
