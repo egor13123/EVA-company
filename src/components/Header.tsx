@@ -48,7 +48,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative text-[12px] uppercase tracking-widest transition-colors duration-500 ${
+                className={`relative text-[14px] uppercase tracking-widest transition-colors duration-500 ${
                   onDarkHero ? "text-paper" : "text-ink"
                 }`}
               >
@@ -72,7 +72,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="mailto:office@eva-tsk.ru"
-            className={`text-[12px] uppercase tracking-widest link-underline transition-colors duration-500 ${
+            className={`text-[14px] uppercase tracking-widest link-underline transition-colors duration-500 ${
               onDarkHero ? "text-paper" : "text-ink"
             }`}
           >
