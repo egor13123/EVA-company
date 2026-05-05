@@ -32,11 +32,11 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12">
+      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Принципы</p>
-          <h2 className="display text-4xl md:text-5xl mt-6">
-            Прозрачность,&nbsp;ответственность, результат
+          <h2 className="display text-4xl md:text-5xl mt-6 leading-[1.05] hyphens-manual">
+            Прозрачность,<br />ответственность,<br />результат
           </h2>
         </Reveal>
         <div className="lg:col-span-7 space-y-px bg-line">
