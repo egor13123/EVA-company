@@ -21,6 +21,7 @@ export default function Footer() {
           <ul className="space-y-3 text-paper/85">
             <li><Link href="/" className="link-underline">Главная</Link></li>
             <li><Link href="/about" className="link-underline">О нас</Link></li>
+            <li><Link href="/experience" className="link-underline">Наш опыт</Link></li>
             <li><Link href="/services" className="link-underline">Услуги</Link></li>
             <li><Link href="/partnership" className="link-underline">Сотрудничество</Link></li>
             <li><Link href="/contact" className="link-underline">Контакты</Link></li>

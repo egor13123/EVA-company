@@ -1,10 +1,10 @@
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import Image from "next/image";
+import CallbackForm from "@/components/CallbackForm";
 
 export const metadata = {
   title: "Контакты — ЕВА ТСК",
-  description: "ООО «ТСК ЕВА» — реквизиты и контактная информация.",
+  description: "ООО «ТСК ЕВА» — реквизиты, контакты, форма заказа звонка.",
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
         lead="Готовы обсудить ваш проект, предложить решение и взять процесс на сопровождение."
       />
 
-      <section className="container-x grid lg:grid-cols-12 gap-12">
+      <section className="container-x grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
         <Reveal className="lg:col-span-7">
           <div className="border border-line p-10 md:p-14 relative">
             <span className="frame-corner tl text-ink" />
@@ -73,38 +73,7 @@ export default function ContactPage() {
         </Reveal>
 
         <Reveal className="lg:col-span-5" delay={0.1}>
-          <div className="relative aspect-[4/5] overflow-hidden">
-            <Image
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80"
-              alt="Москва, бизнес-центр"
-              fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="img-mono object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 text-paper">
-              <p className="text-[11px] uppercase tracking-widest text-paper/70">
-                Офис
-              </p>
-              <p className="display text-2xl mt-2">Москва, Чагинская 4</p>
-            </div>
-          </div>
-        </Reveal>
-      </section>
-
-      <section className="container-x mt-32 md:mt-40">
-        <Reveal>
-          <div className="border-t border-line pt-10 grid lg:grid-cols-12 gap-8 items-center">
-            <h3 className="display text-3xl md:text-4xl lg:col-span-7">
-              Опишите задачу — ответим в&nbsp;течение рабочего&nbsp;дня
-            </h3>
-            <div className="lg:col-span-5 lg:text-right">
-              <a href="mailto:office@eva-tsk.ru?subject=Запрос%20с%20сайта%20EVA%20Company" className="btn-ink">
-                Написать письмо
-                <span aria-hidden>→</span>
-              </a>
-            </div>
-          </div>
+          <CallbackForm />
         </Reveal>
       </section>
     </>
