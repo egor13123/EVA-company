@@ -1,0 +1,154 @@
+import Image from "next/image";
+import Link from "next/link";
+import PageHero from "@/components/PageHero";
+import Reveal from "@/components/Reveal";
+
+export const metadata = {
+  title: "О нас — EVA Company",
+  description:
+    "EVA Company — тендерные закупки в сфере торговли и строительства. Принципы, подход, ценности.",
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="О компании"
+        title={"Делаем\nтендерные закупки\nпредсказуемыми"}
+        lead="EVA Company — компания, которая занимается тендерными закупками в сфере торговли и строительства. Мы выстраиваем процессы так, чтобы заказчик получал результат вовремя и без рисков."
+      />
+
+      <section className="container-x">
+        <Reveal>
+          <div className="relative aspect-[16/8] overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=80"
+              alt="Командная работа над документами"
+              fill
+              sizes="100vw"
+              className="img-mono object-cover"
+            />
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12">
+        <Reveal className="lg:col-span-5">
+          <p className="eyebrow">Принципы</p>
+          <h2 className="display text-4xl md:text-5xl mt-6">
+            Прозрачность,&nbsp;ответственность, результат
+          </h2>
+        </Reveal>
+        <div className="lg:col-span-7 space-y-px bg-line">
+          {[
+            {
+              t: "Прозрачность процессов",
+              d: "Чёткая документация на каждом этапе. Заказчик видит ход работы и может проверить любое решение.",
+            },
+            {
+              t: "Глубокая экспертиза",
+              d: "Мы погружаемся в специфику отрасли заказчика — от стройматериалов до торгового оборудования.",
+            },
+            {
+              t: "Гарантия исполнения",
+              d: "Сопровождаем не только подачу заявки, но и весь жизненный цикл контракта до его закрытия.",
+            },
+            {
+              t: "Долгосрочные отношения",
+              d: "Большая часть наших заказчиков работает с нами повторно — именно это для нас главный показатель.",
+            },
+          ].map((row, i) => (
+            <Reveal
+              key={row.t}
+              delay={i * 0.06}
+              className="bg-paper py-8 grid grid-cols-12 gap-6 items-baseline"
+            >
+              <span className="col-span-1 text-[11px] uppercase tracking-widest text-ash">
+                0{i + 1}
+              </span>
+              <h3 className="display text-2xl md:text-3xl col-span-11 md:col-span-4">
+                {row.t}
+              </h3>
+              <p className="col-span-12 md:col-span-7 text-ink/70 leading-relaxed">
+                {row.d}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-center">
+        <Reveal className="lg:col-span-6">
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <Image
+              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80"
+              alt="Документы и расчёты"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="img-mono object-cover"
+            />
+          </div>
+        </Reveal>
+        <div className="lg:col-span-6 lg:pl-8">
+          <Reveal>
+            <p className="eyebrow">Подход</p>
+            <h2 className="display text-4xl md:text-5xl mt-6">
+              Каждый контракт — индивидуальная работа
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-8 text-lg text-ink/80 leading-relaxed">
+              Мы не работаем по шаблонам. Любая закупка — это уникальное
+              сочетание сроков, требований заказчика, особенностей рынка и
+              номенклатуры. Наша задача — выстроить процесс под конкретный
+              проект и довести его до результата.
+            </p>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <ul className="mt-10 space-y-4">
+              {[
+                "Анализ конкурсной документации и условий контракта",
+                "Подбор поставщиков и расчёт оптимальной цены",
+                "Подготовка пакета документов и подача заявки",
+                "Сопровождение исполнения контракта до закрытия",
+              ].map((item) => (
+                <li key={item} className="flex gap-4 items-start">
+                  <span className="display text-2xl leading-none mt-1">·</span>
+                  <span className="text-ink/85 leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="container-x mt-32 md:mt-48">
+        <Reveal>
+          <div className="border-t border-b border-line py-16 md:py-24 text-center">
+            <p className="display italic text-3xl md:text-5xl max-w-4xl mx-auto leading-tight">
+              «Тендерные закупки — это инженерная задача. Качество подготовки
+              решает исход.»
+            </p>
+            <p className="mt-8 text-[11px] uppercase tracking-widest text-ash">
+              ООО «ТСК ЕВА»
+            </p>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="container-x mt-32 md:mt-40">
+        <Reveal>
+          <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
+            <h3 className="display text-3xl md:text-4xl">
+              Хотите познакомиться ближе?
+            </h3>
+            <div className="flex gap-3">
+              <Link href="/contact" className="btn-ink">Связаться</Link>
+              <Link href="/services" className="btn-ghost">Услуги</Link>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+    </>
+  );
+}
