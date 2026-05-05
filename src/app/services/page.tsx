@@ -20,7 +20,7 @@ export default function ServicesPage() {
       <section className="container-x">
         <Reveal>
           <div className="grid lg:grid-cols-12 gap-12 items-end">
-            <p className="display italic text-3xl md:text-5xl leading-tight lg:col-span-8 max-w-4xl">
+            <p className="display text-3xl md:text-5xl leading-tight lg:col-span-8 max-w-4xl">
               Ваш надёжный бизнес-партнёр для&nbsp;поставок любой&nbsp;сложности.
               Успешно участвуем в&nbsp;тендерах по&nbsp;44-ФЗ и&nbsp;223-ФЗ.
             </p>
