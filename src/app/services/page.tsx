@@ -52,7 +52,7 @@ export default function ServicesPage() {
       <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Сферы</p>
-          <h2 className="display text-4xl md:text-5xl mt-6">
+          <h2 className="display text-5xl md:text-6xl mt-6">
             Где&nbsp;работаем
           </h2>
         </Reveal>
@@ -66,10 +66,10 @@ export default function ServicesPage() {
             <Reveal
               key={row.t}
               delay={i * 0.06}
-              className="bg-paper p-8 md:p-10"
+              className="bg-paper p-10 md:p-12"
             >
-              <p className="display text-3xl">{row.t}</p>
-              <p className="mt-4 text-ink/70 leading-relaxed">{row.d}</p>
+              <p className="display text-4xl md:text-5xl">{row.t}</p>
+              <p className="mt-6 text-lg text-ink/75 leading-relaxed">{row.d}</p>
             </Reveal>
           ))}
         </div>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
           <p className="eyebrow">Процесс</p>
         </Reveal>
         <Reveal delay={0.05}>
-          <h2 className="display text-4xl md:text-5xl mt-6 max-w-[20ch]">
+          <h2 className="display text-5xl md:text-6xl mt-6 max-w-[20ch]">
             От&nbsp;первого контакта до&nbsp;закрытия контракта
           </h2>
         </Reveal>
@@ -95,11 +95,11 @@ export default function ServicesPage() {
             <Reveal
               key={step.n}
               delay={i * 0.08}
-              className="bg-paper p-10 min-h-[260px] flex flex-col"
+              className="bg-paper p-10 md:p-12 min-h-[300px] flex flex-col"
             >
-              <span className="display text-5xl text-ink/15">{step.n}</span>
-              <h3 className="display text-2xl mt-auto">{step.t}</h3>
-              <p className="mt-3 text-sm text-ink/70 leading-relaxed">{step.d}</p>
+              <span className="display text-6xl md:text-7xl text-ink/15">{step.n}</span>
+              <h3 className="display text-3xl md:text-4xl mt-auto">{step.t}</h3>
+              <p className="mt-5 text-base md:text-lg text-ink/75 leading-relaxed">{step.d}</p>
             </Reveal>
           ))}
         </div>
