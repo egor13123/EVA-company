@@ -22,8 +22,8 @@ export default function AboutPage() {
         <Reveal>
           <div className="relative aspect-[16/8] overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2400&q=80"
-              alt="Командная работа над документами"
+              src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=2400&q=80"
+              alt="Строительство и развитие инфраструктуры"
               fill
               sizes="100vw"
               className="img-mono object-cover"
