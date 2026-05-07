@@ -37,11 +37,11 @@ export default function HomePage() {
             ООО «ТСК ЕВА» · Est. 2025
           </motion.p>
 
-          <h1 className="display text-[clamp(3rem,11vw,9.5rem)] mt-8 leading-[0.95] max-w-[16ch]">
+          <h1 className="display text-[clamp(2.6rem,9vw,8rem)] mt-8 leading-[0.95] max-w-[22ch]">
             {[
-              "Тендерные закупки",
-              "в торговле",
-              "и строительстве",
+              "Комплексные поставщики",
+              "в сфере строительства",
+              "и торговли",
             ].map((line, i) => (
               <motion.span
                 key={i}
