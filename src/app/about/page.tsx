@@ -127,12 +127,17 @@ export default function AboutPage() {
           <p className="eyebrow">Преимущество</p>
         </Reveal>
         <Reveal delay={0.05}>
-          <p className="display text-3xl md:text-4xl lg:text-[44px] mt-8 leading-[1.3] max-w-5xl">
-            Ключевое преимущество ТСК&nbsp;ЕВА&nbsp;— практический подход
-            к&nbsp;поставке. Мы понимаем, что для заказчика важна не&nbsp;только
-            цена, но&nbsp;и&nbsp;соответствие товара техническому заданию,
-            надёжность поставщика, соблюдение сроков, корректность документов
-            и&nbsp;исполнение обязательств по&nbsp;договору.
+          <h3 className="display text-4xl md:text-5xl lg:text-[56px] mt-8 leading-[1.1] max-w-4xl">
+            Ключевое преимущество ТСК&nbsp;ЕВА
+          </h3>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <p className="mt-8 text-lg md:text-xl lg:text-2xl text-ink/80 leading-[1.6] max-w-4xl">
+            Практический подход к&nbsp;поставке. Мы понимаем, что для заказчика
+            важна не&nbsp;только цена, но&nbsp;и&nbsp;соответствие товара
+            техническому заданию, надёжность поставщика, соблюдение сроков,
+            корректность документов и&nbsp;исполнение обязательств
+            по&nbsp;договору.
           </p>
         </Reveal>
       </section>
