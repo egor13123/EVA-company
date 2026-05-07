@@ -92,26 +92,16 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <section className="container-x mt-24 md:mt-32">
+      <section className="container-x mt-24 md:mt-40">
         <Reveal>
-          <p className="eyebrow">Цифры</p>
+          <p className="display text-3xl md:text-4xl lg:text-[44px] leading-[1.3] max-w-5xl text-ink">
+            Мы работаем с&nbsp;объектами различной сложности, участвуем
+            в&nbsp;закупках по&nbsp;44-ФЗ и&nbsp;223-ФЗ, подбираем
+            производителей и&nbsp;поставщиков, анализируем технические
+            задания и&nbsp;обеспечиваем поставку продукции в&nbsp;соответствии
+            с&nbsp;требованиями заказчика.
+          </p>
         </Reveal>
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-0">
-          {[
-            { num: "44", sub: "Федеральный закон", note: "о госзакупках" },
-            { num: "223", sub: "Федеральный закон", note: "о закупках госкомпаний" },
-            { num: "100%", sub: "Документооборот", note: "сопровождение под ключ" },
-            { num: "24/7", sub: "Поддержка", note: "по действующим тендерам" },
-          ].map((item, i) => (
-            <Reveal key={item.num} delay={i * 0.08} className="border-l border-line pl-6">
-              <p className="display text-5xl md:text-6xl">{item.num}</p>
-              <p className="mt-4 text-[11px] uppercase tracking-widest text-ash">
-                {item.sub}
-              </p>
-              <p className="mt-1 text-sm text-ink/70">{item.note}</p>
-            </Reveal>
-          ))}
-        </div>
       </section>
 
       <section className="container-x mt-32 md:mt-48">
