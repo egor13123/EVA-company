@@ -104,25 +104,46 @@ export default function ServicesPage() {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="display text-5xl md:text-6xl mt-6 max-w-[20ch]">
-            От&nbsp;первого контакта до&nbsp;закрытия контракта
+            Как&nbsp;мы&nbsp;работаем
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-line">
+        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-5 gap-px bg-line">
           {[
-            { n: "01", t: "Анализ задачи", d: "Изучаем потребность, бюджет, требования к поставке." },
-            { n: "02", t: "Подбор тендеров", d: "Находим релевантные закупки и оцениваем перспективы участия." },
-            { n: "03", t: "Подача заявки", d: "Готовим документы, обеспечения, проходим аккредитацию." },
-            { n: "04", t: "Исполнение", d: "Поставляем товар, ведём документооборот, закрываем контракт." },
+            {
+              n: "01",
+              t: "Получаем заявку или техническое задание",
+              d: "Изучаем потребность заказчика, спецификацию, требования к товару, срокам и документам.",
+            },
+            {
+              n: "02",
+              t: "Подбираем продукцию и поставщиков",
+              d: "Ищем оптимальные варианты у производителей, дилеров и проверенных поставщиков.",
+            },
+            {
+              n: "03",
+              t: "Проверяем соответствие требованиям",
+              d: "Сопоставляем характеристики товара с техническим заданием, условиями закупки или договора.",
+            },
+            {
+              n: "04",
+              t: "Формируем предложение",
+              d: "Готовим коммерческое предложение с учётом цены, сроков, логистики и документов.",
+            },
+            {
+              n: "05",
+              t: "Организуем поставку",
+              d: "Контролируем отгрузку, документы и исполнение обязательств перед заказчиком.",
+            },
           ].map((step, i) => (
             <Reveal
               key={step.n}
               delay={i * 0.08}
-              className="bg-paper p-10 md:p-12 min-h-[300px] flex flex-col"
+              className="bg-paper p-8 md:p-10 min-h-[320px] flex flex-col"
             >
-              <span className="display text-6xl md:text-7xl text-ink/15">{step.n}</span>
-              <h3 className="display text-3xl md:text-4xl mt-auto">{step.t}</h3>
-              <p className="mt-5 text-base md:text-lg text-ink/75 leading-relaxed">{step.d}</p>
+              <span className="display text-5xl md:text-6xl text-ink/15">{step.n}</span>
+              <h3 className="display text-2xl md:text-[26px] mt-auto leading-[1.2]">{step.t}</h3>
+              <p className="mt-5 text-sm md:text-base text-ink/75 leading-relaxed">{step.d}</p>
             </Reveal>
           ))}
         </div>
