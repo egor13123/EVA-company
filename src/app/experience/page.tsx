@@ -47,6 +47,50 @@ export default function ExperiencePage() {
         </div>
       </section>
 
+      <section className="container-x mt-32 md:mt-48">
+        <Reveal>
+          <p className="eyebrow">С кем работали</p>
+        </Reveal>
+        <Reveal delay={0.05}>
+          <h2 className="display text-4xl md:text-5xl mt-6 max-w-[26ch] leading-[1.05]">
+            Опыт поставок для&nbsp;крупных строительных и&nbsp;инфраструктурных
+            организаций
+          </h2>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <p className="mt-8 text-lg text-ink/80 leading-relaxed max-w-3xl">
+            ООО «ТСК ЕВА» имеет опыт поставок для организаций, работающих
+            в сфере строительства, метрополитена и инфраструктурных объектов.
+          </p>
+          <p className="mt-6 text-base text-ash uppercase tracking-widest">
+            В числе организаций, по которым у компании имеется опыт исполнения
+            поставок:
+          </p>
+        </Reveal>
+
+        <div className="mt-12 grid sm:grid-cols-2 gap-px bg-line">
+          {[
+            "АО «Метрострой Северной столицы»",
+            "ГУП «Петербургский метрополитен»",
+            "АО «Мосметрострой»",
+            "ООО «Тоннельстройкомплект»",
+          ].map((name, i) => (
+            <Reveal
+              key={name}
+              delay={i * 0.06}
+              className="bg-paper p-10 md:p-12"
+            >
+              <span className="text-[11px] uppercase tracking-widest text-ash">
+                0{i + 1}
+              </span>
+              <p className="display text-2xl md:text-3xl mt-6 leading-[1.2]">
+                {name}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       <section className="container-x mt-32 md:mt-40">
         <Reveal>
           <div className="border-t border-line pt-10 flex flex-wrap items-center justify-between gap-6">
