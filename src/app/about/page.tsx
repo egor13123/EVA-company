@@ -122,20 +122,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-48">
-        <Reveal>
-          <div className="border-t border-b border-line py-16 md:py-24 text-center">
-            <p className="display italic text-3xl md:text-5xl max-w-4xl mx-auto leading-tight">
-              «Тендерные закупки — это инженерная задача. Качество подготовки
-              решает исход.»
-            </p>
-            <p className="mt-8 text-[11px] uppercase tracking-widest text-ash">
-              ООО «ТСК ЕВА»
-            </p>
-          </div>
-        </Reveal>
-      </section>
-
       <section className="container-x mt-32 md:mt-40">
         <Reveal>
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
