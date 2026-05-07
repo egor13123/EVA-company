@@ -49,32 +49,6 @@ export default function ServicesPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12">
-        <Reveal className="lg:col-span-5">
-          <p className="eyebrow">Сферы</p>
-          <h2 className="display text-5xl md:text-6xl mt-6">
-            Где&nbsp;работаем
-          </h2>
-        </Reveal>
-        <div className="lg:col-span-7 grid sm:grid-cols-2 gap-px bg-line">
-          {[
-            { t: "Торговля", d: "Снабжение коммерческих и государственных заказчиков широкой номенклатурой товаров." },
-            { t: "Строительство", d: "Поставка стройматериалов и оборудования для подрядчиков и государственных объектов." },
-            { t: "44-ФЗ", d: "Закупки государственных заказчиков. Полное сопровождение конкурсной процедуры." },
-            { t: "223-ФЗ", d: "Закупки госкомпаний и корпораций — гибкая работа в рамках корпоративных регламентов." },
-          ].map((row, i) => (
-            <Reveal
-              key={row.t}
-              delay={i * 0.06}
-              className="bg-paper p-10 md:p-12"
-            >
-              <p className="display text-4xl md:text-5xl">{row.t}</p>
-              <p className="mt-6 text-lg text-ink/75 leading-relaxed">{row.d}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Направления</p>
