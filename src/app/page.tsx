@@ -82,13 +82,11 @@ export default function HomePage() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 1.1 }}
           className="container-x pb-12 md:pb-16"
         >
-          <div className="md:ml-auto md:max-w-md lg:max-w-[480px] border border-paper/30 bg-ink/55 backdrop-blur-md p-8 md:p-10">
-            <p className="text-[13px] md:text-sm uppercase tracking-[0.25em] text-paper/75">
-              Поставки и тендеры
-            </p>
-            <p className="mt-5 text-lg md:text-xl text-paper leading-[1.5]">
-              Полный цикл сопровождения закупок — от&nbsp;подачи заявки
-              до&nbsp;исполнения контракта.
+          <div className="md:ml-auto md:max-w-md lg:max-w-[520px] border border-paper/30 bg-ink/55 backdrop-blur-md p-8 md:p-10">
+            <p className="text-lg md:text-xl text-paper leading-[1.5]">
+              Мы не просто продаём строительные материалы и&nbsp;оборудование&nbsp;—
+              мы закрываем потребность заказчика под конкретный объект,
+              техническое задание и&nbsp;сроки поставки.
             </p>
           </div>
         </motion.div>
