@@ -44,6 +44,31 @@ export default function ExperiencePage() {
               с&nbsp;подписанными актами.
             </p>
           </Reveal>
+
+          <Reveal as="article" className="bg-paper p-12 md:p-20 relative" delay={0.2}>
+            <span className="frame-corner tl text-ink" />
+            <span className="frame-corner br text-ink" />
+            <p className="eyebrow">Сумма контрактов</p>
+            <p className="display text-[clamp(5rem,14vw,11rem)] mt-8 leading-[0.9]">
+              100+
+            </p>
+            <p className="mt-8 text-lg md:text-xl text-ink/80 leading-relaxed max-w-md">
+              миллионов рублей — общая сумма по&nbsp;10&nbsp;успешно завершённым
+              контрактам.
+            </p>
+          </Reveal>
+
+          <Reveal as="article" className="bg-paper p-12 md:p-20 relative" delay={0.3}>
+            <span className="frame-corner tl text-ink" />
+            <span className="frame-corner br text-ink" />
+            <p className="eyebrow">Совокупный объём</p>
+            <p className="display text-[clamp(5rem,14vw,11rem)] mt-8 leading-[0.9]">
+              250
+            </p>
+            <p className="mt-8 text-lg md:text-xl text-ink/80 leading-relaxed max-w-md">
+              миллионов рублей — суммарный объём выполненных контрактов.
+            </p>
+          </Reveal>
         </div>
       </section>
 
