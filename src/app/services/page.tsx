@@ -75,6 +75,55 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
+        <Reveal className="lg:col-span-5">
+          <p className="eyebrow">Направления</p>
+          <h2 className="display text-5xl md:text-6xl mt-6 leading-[1.05]">
+            Наши направления
+          </h2>
+        </Reveal>
+        <div className="lg:col-span-7 space-y-px bg-line">
+          {[
+            {
+              t: "Строительные материалы",
+              d: "Поставка материалов для строительных, ремонтных и инфраструктурных объектов.",
+            },
+            {
+              t: "Оборудование и механизмы",
+              d: "Подбор и поставка оборудования, подъёмных механизмов, технических изделий и комплектующих.",
+            },
+            {
+              t: "Строительная техника",
+              d: "Поставка техники и специализированного оборудования под задачи объекта.",
+            },
+            {
+              t: "Тендерные поставки по 44-ФЗ и 223-ФЗ",
+              d: "Участие в государственных и корпоративных закупках, подбор продукции под техническое задание, работа с поставщиками и производителями.",
+            },
+            {
+              t: "Комплексное снабжение объектов",
+              d: "Закрытие потребности заказчика по нескольким товарным группам в рамках одной поставки или контракта.",
+            },
+          ].map((row, i) => (
+            <Reveal
+              key={row.t}
+              delay={i * 0.06}
+              className="bg-paper py-9 md:py-10 grid grid-cols-12 gap-6 items-baseline"
+            >
+              <span className="col-span-1 text-[11px] uppercase tracking-widest text-ash">
+                0{i + 1}
+              </span>
+              <h3 className="display text-2xl md:text-3xl col-span-11 md:col-span-5 leading-[1.15]">
+                {row.t}
+              </h3>
+              <p className="col-span-12 md:col-span-6 text-ink/75 leading-relaxed text-base md:text-lg">
+                {row.d}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
       <section className="container-x mt-32 md:mt-48">
         <Reveal>
           <p className="eyebrow">Процесс</p>
