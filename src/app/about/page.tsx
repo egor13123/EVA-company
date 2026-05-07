@@ -122,6 +122,21 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="container-x mt-32 md:mt-48">
+        <Reveal>
+          <p className="eyebrow">Преимущество</p>
+        </Reveal>
+        <Reveal delay={0.05}>
+          <p className="display text-3xl md:text-4xl lg:text-[44px] mt-8 leading-[1.3] max-w-5xl">
+            Ключевое преимущество ТСК&nbsp;ЕВА&nbsp;— практический подход
+            к&nbsp;поставке. Мы понимаем, что для заказчика важна не&nbsp;только
+            цена, но&nbsp;и&nbsp;соответствие товара техническому заданию,
+            надёжность поставщика, соблюдение сроков, корректность документов
+            и&nbsp;исполнение обязательств по&nbsp;договору.
+          </p>
+        </Reveal>
+      </section>
+
       <section className="container-x mt-32 md:mt-40">
         <Reveal>
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
