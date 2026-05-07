@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="md:col-span-5 flex flex-col gap-6">
           <Logo size="sm" inverted />
           <p className="text-paper/60 max-w-sm leading-relaxed">
-            Тендерные закупки в торговле и строительстве. Поставки любой
-            сложности с участием в 44-ФЗ и 223-ФЗ.
+            Комплексные поставщики в&nbsp;сфере строительства и&nbsp;торговли.
+            Тендерные закупки в&nbsp;торговле и&nbsp;строительстве. Поставки
+            любой сложности с&nbsp;участием в&nbsp;44-ФЗ и&nbsp;223-ФЗ.
           </p>
         </div>
 
