@@ -28,15 +28,6 @@ export default function HomePage() {
         </motion.div>
 
         <div className="container-x flex-1 flex flex-col justify-center text-paper pt-28 md:pt-32 pb-12">
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="eyebrow !text-paper/70"
-          >
-            ООО «ТСК ЕВА» · Est. 2025
-          </motion.p>
-
           <h1 className="display text-[clamp(2.6rem,9vw,8rem)] mt-8 leading-[0.95] max-w-[22ch]">
             {[
               "Комплексные поставщики",
