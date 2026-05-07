@@ -94,18 +94,6 @@ export default function HomePage() {
 
       <section className="container-x mt-24 md:mt-40">
         <Reveal>
-          <p className="display text-3xl md:text-4xl lg:text-[44px] leading-[1.3] max-w-5xl text-ink">
-            Мы работаем с&nbsp;объектами различной сложности, участвуем
-            в&nbsp;закупках по&nbsp;44-ФЗ и&nbsp;223-ФЗ, подбираем
-            производителей и&nbsp;поставщиков, анализируем технические
-            задания и&nbsp;обеспечиваем поставку продукции в&nbsp;соответствии
-            с&nbsp;требованиями заказчика.
-          </p>
-        </Reveal>
-      </section>
-
-      <section className="container-x mt-32 md:mt-48">
-        <Reveal>
           <p className="eyebrow">О компании</p>
         </Reveal>
         <div className="mt-10 md:mt-14 grid lg:grid-cols-12 gap-12 items-start">
