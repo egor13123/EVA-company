@@ -38,8 +38,18 @@ export default function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-x flex items-center justify-between py-4 md:py-5">
-        <Logo size="sm" inverted={onDarkHero} />
+      <div className="mx-auto w-full max-w-[1340px] px-4 md:px-6 lg:px-8 flex items-center justify-between py-4 md:py-5">
+        <div className="flex items-center gap-3 md:gap-5">
+          <Logo size="sm" inverted={onDarkHero} />
+          <div
+            className={`hidden md:flex flex-col text-[10px] uppercase tracking-[0.2em] leading-[1.4] transition-colors duration-500 ${
+              onDarkHero ? "text-paper/70" : "text-ash"
+            }`}
+          >
+            <span>Торгово-строительная</span>
+            <span>компания</span>
+          </div>
+        </div>
 
         <nav className="hidden lg:flex items-center gap-10">
           {NAV.map((item) => {
