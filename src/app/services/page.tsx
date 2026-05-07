@@ -98,6 +98,37 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
+        <Reveal className="lg:col-span-5">
+          <p className="eyebrow">Поставка</p>
+          <h2 className="display text-5xl md:text-6xl mt-6 leading-[1.05]">
+            Что мы поставляем
+          </h2>
+        </Reveal>
+        <ul className="lg:col-span-7 grid sm:grid-cols-2 gap-x-10 gap-y-4">
+          {[
+            "Строительные материалы",
+            "Металлопрокат",
+            "Цемент, сухие смеси, бетонные материалы",
+            "Инженерное и строительное оборудование",
+            "Подъёмные механизмы",
+            "Строительную технику",
+            "Комплектующие и расходные материалы",
+            "Специализированную продукцию под техническое задание заказчика",
+          ].map((item, i) => (
+            <Reveal
+              key={item}
+              delay={i * 0.04}
+              as="li"
+              className="display text-xl md:text-2xl flex items-start gap-4 leading-[1.3]"
+            >
+              <span className="text-ink/30 mt-1 shrink-0">—</span>
+              <span>{item}</span>
+            </Reveal>
+          ))}
+        </ul>
+      </section>
+
       <section className="container-x mt-32 md:mt-48">
         <Reveal>
           <p className="eyebrow">Процесс</p>
