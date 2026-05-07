@@ -139,10 +139,10 @@ export default function ServicesPage() {
             <Reveal
               key={step.n}
               delay={i * 0.08}
-              className="bg-paper p-8 md:p-10 min-h-[320px] flex flex-col"
+              className="bg-paper p-8 md:p-10"
             >
-              <span className="display text-5xl md:text-6xl text-ink/15">{step.n}</span>
-              <h3 className="display text-2xl md:text-[26px] mt-auto leading-[1.2]">{step.t}</h3>
+              <span className="display text-5xl md:text-6xl text-ink/15 block">{step.n}</span>
+              <h3 className="display text-2xl md:text-[26px] mt-10 leading-[1.2]">{step.t}</h3>
               <p className="mt-5 text-sm md:text-base text-ink/75 leading-relaxed">{step.d}</p>
             </Reveal>
           ))}
