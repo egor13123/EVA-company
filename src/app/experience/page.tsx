@@ -95,22 +95,30 @@ export default function ExperiencePage() {
 
         <div className="mt-12 grid sm:grid-cols-2 gap-px bg-line">
           {[
-            "АО «Метрострой Северной столицы»",
-            "ГУП «Петербургский метрополитен»",
-            "АО «Мосметрострой»",
-            "ООО «Тоннельстройкомплект»",
-          ].map((name, i) => (
+            { name: "АО «Метрострой Северной столицы»", logo: "/metrostroy.png" },
+            { name: "ГУП «Петербургский метрополитен»", logo: "/metropiter.png" },
+            { name: "АО «Мосметрострой»", logo: "/mos.png" },
+            { name: "ООО «Тоннельстройкомплект»", logo: "/tonel.png" },
+          ].map((client, i) => (
             <Reveal
-              key={name}
+              key={client.name}
               delay={i * 0.06}
               className="bg-paper p-10 md:p-12"
             >
               <span className="text-[11px] uppercase tracking-widest text-ash">
                 0{i + 1}
               </span>
-              <p className="display text-2xl md:text-3xl mt-6 leading-[1.2]">
-                {name}
-              </p>
+              <div className="mt-6 flex items-center gap-6 md:gap-8">
+                <p className="display text-2xl md:text-3xl leading-[1.2] flex-1">
+                  {client.name}
+                </p>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={client.logo}
+                  alt=""
+                  className="block shrink-0 max-h-12 md:max-h-16 w-auto object-contain [filter:grayscale(100%)] opacity-80"
+                />
+              </div>
             </Reveal>
           ))}
         </div>
