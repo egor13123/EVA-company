@@ -15,6 +15,9 @@
 /.next/
 /out/
 
+# deploy artifacts
+/eva-tsk-site.zip
+
 # production
 /build
 
@@ -30,6 +33,7 @@ yarn-error.log*
 
 # env files
 .env*
+!.env.deploy.example
 
 # vercel
 .vercel

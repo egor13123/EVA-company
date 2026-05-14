@@ -1,0 +1,16 @@
+DirectoryIndex index.html
+
+RewriteEngine On
+
+# Редирект http → https (с учётом прокси Sprinthost)
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Если файл/папка не существует — добавляем trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+[^/])$ /$1/ [R=301,L]
+
+# Кастомная 404
+ErrorDocument 404 /404.html

@@ -44,11 +44,13 @@
 
 ## Деплой
 
-- **Хостинг:** Vercel
-- **Production-домен:** https://eva-company.vercel.app
+- **Хостинг:** Sprinthost (shared hosting, не Vercel)
+- **Production-домен:** https://eva-tsk.ru/
 - **Production-ветка:** `main`
-- **Рабочая ветка:** `claude/eva-company-website-FEM51`
-- При коммитах в `main` Vercel пересобирает автоматически
+- **Рабочая ветка:** `claude/eva-website-progress-w4kxi`
+- **Тип сборки:** статический экспорт Next.js (`output: "export"` в `next.config.ts`)
+- **Основной способ деплоя:** GitHub Actions, workflow `.github/workflows/deploy.yml`. При пуше в `main` (или ручном запуске через Actions tab) собирается `out/` и заливается на Sprinthost через `rsync` по SSH. Требует пять секретов в репозитории: `SPRINTHOST_HOST`, `SPRINTHOST_USER`, `SPRINTHOST_PORT`, `SPRINTHOST_PATH`, `SPRINTHOST_SSH_KEY`. rsync с `--delete` синхронизирует полностью: всё, что нужно сохранить на сервере (`.htaccess`, `robots.txt`, `sitemap.xml`, `yandex_*.html`), лежит в `public/` репозитория и попадает в каждый билд.
+- **Резервный способ (для Mac/Linux/WSL):** локально `npm run deploy` через `scripts/deploy.sh` + `.env.deploy.local`.
 
 ## Структура страниц
 
@@ -61,6 +63,7 @@
 
 ## Известные ограничения окружения
 
-- Контейнер не имеет прямого доступа к `vercel.app` (host_not_allowed) — превью production-сайта проверяется только пользователем.
+- Контейнер не имеет прямого доступа к `eva-tsk.ru` и внешним хостам (host_not_allowed) — production-сайт проверяется только пользователем.
+- Доступов к панели Sprinthost / FTP у Claude нет: после `npm run build` сборку из `out/` загружает пользователь. Удобный вариант — упаковать `out/` в ZIP и отдать в файловый менеджер хостинга.
 - Локальный git-прокси и GitHub MCP могут давать 403, если Claude GitHub App не установлен на аккаунте `egor13123`. Если push не идёт — попросить пользователя проверить установку приложения.
 - Unsplash IDs нельзя предсказать «вслепую» — если нужно конкретное фото (например, Москвы), лучше попросить у пользователя ссылку или файл.

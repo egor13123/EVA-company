@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eva-tsk.ru/sitemap.xml
