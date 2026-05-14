@@ -69,7 +69,6 @@ RSYNC_BASE=(
   --delete
   --human-readable
   --omit-dir-times
-  --exclude=".htaccess"
   -e "ssh -p ${SPRINTHOST_PORT}"
 )
 
