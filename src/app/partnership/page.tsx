@@ -20,20 +20,20 @@ export default function PartnershipPage() {
 
       <section className="container-x">
         <div className="grid lg:grid-cols-12 gap-px bg-line border border-line">
-          <Reveal as="article" className="lg:col-span-6 bg-paper p-10 md:p-16 relative">
+          <Reveal as="article" className="lg:col-span-6 bg-paper p-7 md:p-16 relative">
             <span className="frame-corner tl text-ink" />
             <span className="frame-corner tr text-ink" />
             <p className="eyebrow">01 · Совместные проекты</p>
-            <h2 className="display text-3xl md:text-5xl mt-8 leading-tight">
+            <h2 className="display text-2xl md:text-5xl mt-6 md:mt-8 leading-[1.2] md:leading-tight">
               Производителям и&nbsp;импортёрам
             </h2>
-            <p className="mt-8 text-ink/80 leading-relaxed">
+            <p className="mt-6 md:mt-8 text-sm md:text-base text-ink/80 leading-relaxed">
               Мы открыты к сотрудничеству с производителями и импортёрами,
               заинтересованными в расширении рынка сбыта через тендерные
               площадки. Объединяем вашу продукцию с нашим опытом для победы
               в госзакупках.
             </p>
-            <ul className="mt-10 space-y-4 text-ink/85">
+            <ul className="mt-8 md:mt-10 space-y-3 md:space-y-4 text-sm md:text-base text-ink/85">
               {[
                 "Анализ потенциала вашей номенклатуры на тендерных площадках",
                 "Подбор подходящих закупок и стратегия участия",
@@ -46,7 +46,7 @@ export default function PartnershipPage() {
                 </li>
               ))}
             </ul>
-            <div className="mt-12">
+            <div className="mt-8 md:mt-12">
               <a
                 href="mailto:office@eva-tsk.ru?subject=Совместный%20проект"
                 className="btn-ink"
@@ -59,21 +59,21 @@ export default function PartnershipPage() {
 
           <Reveal
             as="article"
-            className="lg:col-span-6 bg-ink text-paper p-10 md:p-16 relative"
+            className="lg:col-span-6 bg-ink text-paper p-7 md:p-16 relative"
             delay={0.1}
           >
             <span className="frame-corner tl text-paper" />
             <span className="frame-corner tr text-paper" />
             <p className="eyebrow text-paper/70">02 · Карьера</p>
-            <h2 className="display text-3xl md:text-5xl mt-8 leading-tight">
+            <h2 className="display text-2xl md:text-5xl mt-6 md:mt-8 leading-[1.2] md:leading-tight">
               Присоединяйтесь к&nbsp;команде
             </h2>
-            <p className="mt-8 text-paper/85 leading-relaxed">
+            <p className="mt-6 md:mt-8 text-sm md:text-base text-paper/85 leading-relaxed">
               Ищем опытных специалистов по тендерам с собственной клиентской
               базой и глубоким знанием 44-ФЗ и 223-ФЗ. Предлагаем достойные
               условия в динамично развивающейся компании.
             </p>
-            <ul className="mt-10 space-y-4 text-paper/85">
+            <ul className="mt-8 md:mt-10 space-y-3 md:space-y-4 text-sm md:text-base text-paper/85">
               {[
                 "Опыт работы с государственными и корпоративными закупками",
                 "Знание 44-ФЗ, 223-ФЗ и сопутствующего законодательства",
@@ -86,7 +86,7 @@ export default function PartnershipPage() {
                 </li>
               ))}
             </ul>
-            <div className="mt-12">
+            <div className="mt-8 md:mt-12">
               <a
                 href="mailto:office@eva-tsk.ru?subject=Вакансия%20—%20специалист%20по%20тендерам"
                 className="inline-flex items-center gap-3 border border-paper text-paper px-6 py-3 text-[12px] uppercase tracking-widest transition-colors duration-500 hover:bg-paper hover:text-ink"
@@ -99,9 +99,9 @@ export default function PartnershipPage() {
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-48">
+      <section className="container-x mt-20 md:mt-48">
         <Reveal>
-          <div className="relative aspect-[16/7] overflow-hidden">
+          <div className="relative aspect-[4/3] md:aspect-[16/7] overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2400&q=80"
               alt="Команда за рабочим столом"
@@ -113,10 +113,10 @@ export default function PartnershipPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-40">
+      <section className="container-x mt-20 md:mt-40">
         <Reveal>
-          <div className="border-t border-line pt-10 grid lg:grid-cols-12 gap-8 items-center">
-            <h3 className="display text-3xl md:text-4xl lg:col-span-7">
+          <div className="border-t border-line pt-8 md:pt-10 grid lg:grid-cols-12 gap-6 md:gap-8 items-center">
+            <h3 className="display text-2xl md:text-4xl leading-[1.2] md:leading-[0.95] lg:col-span-7">
               Любой формат партнёрства начинается с&nbsp;разговора
             </h3>
             <div className="lg:col-span-5 lg:text-right flex flex-wrap gap-3 lg:justify-end">

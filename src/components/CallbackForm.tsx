@@ -38,14 +38,14 @@ export default function CallbackForm() {
   };
 
   return (
-    <div className="border border-line p-8 md:p-12 relative bg-paper">
+    <div className="border border-line p-6 md:p-12 relative bg-paper">
       <span className="frame-corner tl text-ink" />
       <span className="frame-corner tr text-ink" />
       <span className="frame-corner bl text-ink" />
       <span className="frame-corner br text-ink" />
 
       <p className="eyebrow">Заказать звонок</p>
-      <h3 className="display text-3xl md:text-4xl mt-4 leading-[1.05]">
+      <h3 className="display text-2xl md:text-4xl mt-4 leading-[1.2] md:leading-[1.05]">
         Перезвоним в&nbsp;течение рабочего&nbsp;дня
       </h3>
 
@@ -57,7 +57,7 @@ export default function CallbackForm() {
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10 space-y-7"
+            className="mt-8 md:mt-10 space-y-6 md:space-y-7"
           >
             <Field label="Ваше имя" name="name" type="text" required />
             <Field label="Телефон" name="phone" type="tel" required placeholder="+7 (___) ___-__-__" />

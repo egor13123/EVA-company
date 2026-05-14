@@ -12,8 +12,8 @@ export default function Logo({ size = "md", inverted = false }: Props) {
     size === "sm"
       ? "w-[200px]"
       : size === "lg"
-      ? "w-[360px]"
-      : "w-[320px] md:w-[280px]";
+      ? "w-[280px] md:w-[360px]"
+      : "w-[180px] md:w-[320px]";
 
   return (
     <Link
