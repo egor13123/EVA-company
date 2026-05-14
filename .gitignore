@@ -33,6 +33,7 @@ yarn-error.log*
 
 # env files
 .env*
+!.env.deploy.example
 
 # vercel
 .vercel
