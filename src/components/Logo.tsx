@@ -25,7 +25,7 @@ export default function Logo({ size = "md", inverted = false }: Props) {
         className={`block select-none ${
           inverted
             ? "[filter:brightness(0)_invert(1)]"
-            : ""
+            : "[filter:brightness(0)]"
         }`}
         draggable={false}
       />
