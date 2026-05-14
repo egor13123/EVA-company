@@ -49,7 +49,8 @@
 - **Production-ветка:** `main`
 - **Рабочая ветка:** `claude/eva-website-progress-w4kxi`
 - **Тип сборки:** статический экспорт Next.js (`output: "export"` в `next.config.ts`)
-- **Процесс деплоя:** `npm run build` → каталог `out/` → залить содержимое в корень публичной директории Sprinthost (FTP/SFTP или файловый менеджер панели). Автодеплоя из git нет.
+- **Основной способ деплоя:** GitHub Actions, workflow `.github/workflows/deploy.yml`. При пуше в `main` (или ручном запуске через Actions tab) собирается `out/` и заливается на Sprinthost через `rsync` по SSH. Требует пять секретов в репозитории: `SPRINTHOST_HOST`, `SPRINTHOST_USER`, `SPRINTHOST_PORT`, `SPRINTHOST_PATH`, `SPRINTHOST_SSH_KEY`. rsync идёт с `--delete --exclude='.htaccess'` (старые файлы удаляются, серверный `.htaccess` сохраняется).
+- **Резервный способ (для Mac/Linux/WSL):** локально `npm run deploy` через `scripts/deploy.sh` + `.env.deploy.local`.
 
 ## Структура страниц
 
