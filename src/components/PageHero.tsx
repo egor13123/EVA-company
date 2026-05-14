@@ -11,7 +11,7 @@ type Props = {
 export default function PageHero({ eyebrow, title, lead }: Props) {
   const lines = title.split("\n");
   return (
-    <section className="container-x pt-28 md:pt-40 pb-16 md:pb-24">
+    <section className="container-x pt-24 md:pt-40 pb-12 md:pb-24">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function PageHero({ eyebrow, title, lead }: Props) {
       >
         {eyebrow}
       </motion.p>
-      <h1 className="display text-[clamp(2.6rem,7vw,6.5rem)] mt-6 max-w-[15ch]">
+      <h1 className="display text-[clamp(2.2rem,7vw,6.5rem)] mt-5 md:mt-6 leading-[1.05] md:leading-[0.95] max-w-[15ch]">
         {lines.map((line, i) => (
           <motion.span
             key={i}
@@ -42,7 +42,7 @@ export default function PageHero({ eyebrow, title, lead }: Props) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
-          className="mt-8 max-w-2xl text-lg leading-relaxed text-ash"
+          className="mt-6 md:mt-8 max-w-2xl text-base md:text-lg leading-relaxed text-ash"
         >
           {lead}
         </motion.p>

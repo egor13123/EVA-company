@@ -32,10 +32,10 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
+      <section className="container-x mt-20 md:mt-48 grid lg:grid-cols-12 gap-8 md:gap-12 items-start">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Принципы</p>
-          <h2 className="display text-4xl md:text-5xl mt-6 leading-[1.05] hyphens-manual">
+          <h2 className="display text-[1.875rem] md:text-5xl mt-5 md:mt-6 leading-[1.15] md:leading-[1.05] hyphens-manual">
             Прозрачность,<br />ответственность,<br />результат
           </h2>
         </Reveal>
@@ -61,15 +61,15 @@ export default function AboutPage() {
             <Reveal
               key={row.t}
               delay={i * 0.06}
-              className="bg-paper py-8 grid grid-cols-12 gap-6 items-baseline"
+              className="bg-paper py-7 md:py-8 grid grid-cols-12 gap-4 md:gap-6 items-baseline"
             >
               <span className="col-span-1 text-[11px] uppercase tracking-widest text-ash">
                 0{i + 1}
               </span>
-              <h3 className="display text-2xl md:text-3xl col-span-11 md:col-span-4">
+              <h3 className="display text-xl md:text-3xl col-span-11 md:col-span-4 leading-[1.2]">
                 {row.t}
               </h3>
-              <p className="col-span-12 md:col-span-7 text-ink/70 leading-relaxed">
+              <p className="col-span-12 md:col-span-7 text-sm md:text-base text-ink/70 leading-relaxed">
                 {row.d}
               </p>
             </Reveal>
@@ -77,9 +77,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-center">
+      <section className="container-x mt-20 md:mt-48 grid lg:grid-cols-12 gap-8 md:gap-12 items-center">
         <Reveal className="lg:col-span-6">
-          <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="relative aspect-[16/10] md:aspect-[4/5] overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=80"
               alt="Документы и расчёты"
@@ -92,12 +92,12 @@ export default function AboutPage() {
         <div className="lg:col-span-6 lg:pl-8">
           <Reveal>
             <p className="eyebrow">Подход</p>
-            <h2 className="display text-4xl md:text-5xl mt-6">
+            <h2 className="display text-[1.875rem] md:text-5xl mt-5 md:mt-6 leading-[1.15] md:leading-[0.95]">
               Каждый контракт — индивидуальная работа
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-8 text-lg text-ink/80 leading-relaxed">
+            <p className="mt-6 md:mt-8 text-base md:text-lg text-ink/80 leading-relaxed">
               Мы не работаем по шаблонам. Любая закупка — это уникальное
               сочетание сроков, требований заказчика, особенностей рынка и
               номенклатуры. Наша задача — выстроить процесс под конкретный
@@ -105,16 +105,16 @@ export default function AboutPage() {
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <ul className="mt-10 space-y-4">
+            <ul className="mt-8 md:mt-10 space-y-3 md:space-y-4">
               {[
                 "Анализ конкурсной документации и условий контракта",
                 "Подбор поставщиков и расчёт оптимальной цены",
                 "Подготовка пакета документов и подача заявки",
                 "Сопровождение исполнения контракта до закрытия",
               ].map((item) => (
-                <li key={item} className="flex gap-4 items-start">
+                <li key={item} className="flex gap-3 md:gap-4 items-start">
                   <span className="display text-2xl leading-none mt-1">·</span>
-                  <span className="text-ink/85 leading-relaxed">{item}</span>
+                  <span className="text-sm md:text-base text-ink/85 leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
@@ -122,17 +122,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-48">
+      <section className="container-x mt-20 md:mt-48">
         <Reveal>
           <p className="eyebrow">Преимущество</p>
         </Reveal>
         <Reveal delay={0.05}>
-          <h3 className="display text-4xl md:text-5xl lg:text-[56px] mt-8 leading-[1.1] max-w-4xl">
+          <h3 className="display text-[1.875rem] md:text-5xl lg:text-[56px] mt-6 md:mt-8 leading-[1.15] md:leading-[1.1] max-w-4xl">
             Ключевое преимущество ТСК&nbsp;ЕВА
           </h3>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="mt-8 text-lg md:text-xl lg:text-2xl text-ink/80 leading-[1.6] max-w-4xl">
+          <p className="mt-6 md:mt-8 text-base md:text-xl lg:text-2xl text-ink/80 leading-[1.6] max-w-4xl">
             Практический подход к&nbsp;поставке. Мы понимаем, что для заказчика
             важна не&nbsp;только цена, но&nbsp;и&nbsp;соответствие товара
             техническому заданию, надёжность поставщика, соблюдение сроков,
@@ -142,10 +142,10 @@ export default function AboutPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-40">
+      <section className="container-x mt-20 md:mt-40">
         <Reveal>
-          <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-10">
-            <h3 className="display text-3xl md:text-4xl">
+          <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-8 md:pt-10">
+            <h3 className="display text-2xl md:text-4xl leading-[1.2] md:leading-[0.95]">
               Перейти к&nbsp;другим разделам
             </h3>
             <div className="flex gap-3">

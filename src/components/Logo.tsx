@@ -6,9 +6,14 @@ type Props = {
 };
 
 export default function Logo({ size = "md", inverted = false }: Props) {
-  // Соотношение логотипа ≈ 400×117 (≈ 3.42:1)
-  const width = size === "sm" ? 200 : size === "lg" ? 360 : 280;
-  const height = Math.round((width * 117) / 400);
+  // Соотношение логотипа ≈ 400×117 (≈ 3.42:1).
+  // Размер задаётся через CSS, чтобы мобильный и десктоп могли отличаться.
+  const widthClass =
+    size === "sm"
+      ? "w-[200px]"
+      : size === "lg"
+      ? "w-[280px] md:w-[360px]"
+      : "w-[180px] md:w-[320px]";
 
   return (
     <Link
@@ -20,9 +25,9 @@ export default function Logo({ size = "md", inverted = false }: Props) {
       <img
         src="/logo-header.png"
         alt="ТСК ЕВА — Торгово-строительная компания"
-        width={width}
-        height={height}
-        className={`block select-none ${
+        width={400}
+        height={117}
+        className={`block h-auto select-none ${widthClass} ${
           inverted
             ? "[filter:brightness(0)_invert(1)]"
             : "[filter:brightness(0)]"

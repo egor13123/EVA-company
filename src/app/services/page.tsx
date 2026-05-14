@@ -19,8 +19,8 @@ export default function ServicesPage() {
 
       <section className="container-x">
         <Reveal>
-          <div className="grid lg:grid-cols-12 gap-12 items-end">
-            <p className="display text-3xl md:text-5xl leading-tight lg:col-span-8 max-w-4xl">
+          <div className="grid lg:grid-cols-12 gap-8 md:gap-12 items-end">
+            <p className="display text-2xl md:text-5xl leading-snug md:leading-tight lg:col-span-8 max-w-4xl">
               Ваш надёжный бизнес-партнёр для&nbsp;поставок любой&nbsp;сложности.
               Успешно участвуем в&nbsp;тендерах по&nbsp;44-ФЗ и&nbsp;223-ФЗ.
             </p>
@@ -49,10 +49,10 @@ export default function ServicesPage() {
         </Reveal>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
+      <section className="container-x mt-20 md:mt-48 grid lg:grid-cols-12 gap-8 md:gap-12 items-start">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Направления</p>
-          <h2 className="display text-5xl md:text-6xl mt-6 leading-[1.05]">
+          <h2 className="display text-[2rem] md:text-6xl mt-5 md:mt-6 leading-[1.1] md:leading-[1.05]">
             Наши направления
           </h2>
         </Reveal>
@@ -98,10 +98,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-48 grid lg:grid-cols-12 gap-12 items-start">
+      <section className="container-x mt-20 md:mt-48 grid lg:grid-cols-12 gap-8 md:gap-12 items-start">
         <Reveal className="lg:col-span-5">
           <p className="eyebrow">Поставка</p>
-          <h2 className="display text-5xl md:text-6xl mt-6 leading-[1.05]">
+          <h2 className="display text-[2rem] md:text-6xl mt-5 md:mt-6 leading-[1.1] md:leading-[1.05]">
             Что мы поставляем
           </h2>
         </Reveal>
@@ -129,17 +129,17 @@ export default function ServicesPage() {
         </ul>
       </section>
 
-      <section className="container-x mt-32 md:mt-48">
+      <section className="container-x mt-20 md:mt-48">
         <Reveal>
           <p className="eyebrow">Процесс</p>
         </Reveal>
         <Reveal delay={0.05}>
-          <h2 className="display text-5xl md:text-6xl mt-6 max-w-[20ch]">
+          <h2 className="display text-[2rem] md:text-6xl mt-5 md:mt-6 leading-[1.1] md:leading-[0.95] max-w-[20ch]">
             Как&nbsp;мы&nbsp;работаем
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-5 gap-px bg-line">
+        <div className="mt-10 md:mt-16 grid md:grid-cols-2 lg:grid-cols-5 gap-px bg-line">
           {[
             {
               n: "01",
@@ -170,20 +170,20 @@ export default function ServicesPage() {
             <Reveal
               key={step.n}
               delay={i * 0.08}
-              className="bg-paper p-8 md:p-10"
+              className="bg-paper p-6 md:p-10"
             >
-              <span className="display text-5xl md:text-6xl text-ink/15 block">{step.n}</span>
-              <h3 className="display text-2xl md:text-[26px] mt-10 leading-[1.2]">{step.t}</h3>
-              <p className="mt-5 text-sm md:text-base text-ink/75 leading-relaxed">{step.d}</p>
+              <span className="display text-4xl md:text-6xl text-ink/15 block">{step.n}</span>
+              <h3 className="display text-xl md:text-[26px] mt-6 md:mt-10 leading-[1.2]">{step.t}</h3>
+              <p className="mt-4 md:mt-5 text-sm md:text-base text-ink/75 leading-relaxed">{step.d}</p>
             </Reveal>
           ))}
         </div>
       </section>
 
-      <section className="container-x mt-32 md:mt-40">
+      <section className="container-x mt-20 md:mt-40">
         <Reveal>
-          <div className="border-t border-line pt-10 flex flex-wrap items-center justify-between gap-6">
-            <h3 className="display text-3xl md:text-4xl max-w-2xl">
+          <div className="border-t border-line pt-8 md:pt-10 flex flex-wrap items-center justify-between gap-6">
+            <h3 className="display text-2xl md:text-4xl leading-[1.2] md:leading-[0.95] max-w-2xl">
               Перейти к&nbsp;другим разделам
             </h3>
             <div className="flex gap-3">
