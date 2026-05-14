@@ -39,7 +39,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto w-full max-w-[1340px] px-4 md:px-6 lg:px-8 flex items-center justify-between py-4 md:py-5">
-        <Logo size="sm" inverted={onDarkHero} />
+        <Logo size="md" inverted={onDarkHero} />
 
         <nav className="hidden lg:flex items-center gap-10">
           {NAV.map((item) => {
