@@ -116,7 +116,7 @@ export default function ExperiencePage() {
                 <img
                   src={client.logo}
                   alt=""
-                  className="block shrink-0 max-h-12 md:max-h-16 w-auto object-contain [filter:grayscale(100%)] opacity-80"
+                  className="block shrink-0 h-16 w-28 md:h-24 md:w-44 object-contain [filter:grayscale(100%)] opacity-80"
                 />
               </div>
             </Reveal>
