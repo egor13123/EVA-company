@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CallbackForm from "@/components/CallbackForm";
+import PresentationViewer from "@/components/PresentationViewer";
 
 export const metadata = {
   title: "Контакты — ЕВА ТСК",
@@ -17,15 +18,16 @@ export default function ContactPage() {
       />
 
       <section className="container-x grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-        <Reveal className="lg:col-span-7">
-          <div className="border border-line p-7 md:p-14 relative">
-            <span className="frame-corner tl text-ink" />
-            <span className="frame-corner tr text-ink" />
-            <span className="frame-corner bl text-ink" />
-            <span className="frame-corner br text-ink" />
+        <div className="lg:col-span-7 space-y-10 lg:space-y-12">
+          <Reveal>
+            <div className="border border-line p-7 md:p-14 relative">
+              <span className="frame-corner tl text-ink" />
+              <span className="frame-corner tr text-ink" />
+              <span className="frame-corner bl text-ink" />
+              <span className="frame-corner br text-ink" />
 
-            <p className="eyebrow">Юридические данные</p>
-            <h2 className="display text-[1.875rem] md:text-5xl mt-5 md:mt-6 leading-[1.15] md:leading-[0.95]">ООО «ТСК ЕВА»</h2>
+              <p className="eyebrow">Юридические данные</p>
+              <h2 className="display text-[1.875rem] md:text-5xl mt-5 md:mt-6 leading-[1.15] md:leading-[0.95]">ООО «ТСК ЕВА»</h2>
 
             <div className="mt-9 md:mt-12 grid sm:grid-cols-2 gap-y-8 md:gap-y-10 gap-x-6 md:gap-x-8">
               <div>
@@ -69,8 +71,18 @@ export default function ContactPage() {
                 <p className="mt-3 text-ink/85">Москва и Московская область</p>
               </div>
             </div>
-          </div>
-        </Reveal>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <PresentationViewer
+              title="Инвестиционное предложение"
+              description="Возможность войти в капитал ТСК ЕВА — экономика компании, направления роста, условия партнёрства."
+              pdfHref="/eva-tsk-presentation-2.pdf"
+              downloadHref="/eva-tsk-presentation-2.pptx"
+            />
+          </Reveal>
+        </div>
 
         <Reveal className="lg:col-span-5" delay={0.1}>
           <CallbackForm />
