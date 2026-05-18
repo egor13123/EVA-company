@@ -143,6 +143,45 @@ export default function AboutPage() {
       </section>
 
       <section className="container-x mt-20 md:mt-40">
+        <div className="border border-line p-7 md:p-14 relative">
+          <span className="frame-corner tl text-ink" />
+          <span className="frame-corner tr text-ink" />
+          <span className="frame-corner bl text-ink" />
+          <span className="frame-corner br text-ink" />
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <Reveal className="lg:col-span-7">
+              <p className="eyebrow">Презентация</p>
+              <h3 className="display text-[1.875rem] md:text-5xl mt-5 md:mt-6 leading-[1.15] md:leading-[1.05]">
+                Презентация компании
+              </h3>
+              <p className="mt-5 md:mt-6 text-base md:text-lg text-ink/75 leading-relaxed max-w-2xl">
+                Краткое представление ТСК&nbsp;ЕВА в&nbsp;одном файле&nbsp;—
+                опыт, направления работы, подход к&nbsp;поставкам.
+              </p>
+            </Reveal>
+            <Reveal className="lg:col-span-5 flex flex-wrap gap-3 lg:justify-end" delay={0.1}>
+              <a
+                href="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Feva-tsk.ru%2Feva-tsk-presentation.pptx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ink"
+              >
+                Посмотреть
+                <span aria-hidden>→</span>
+              </a>
+              <a
+                href="/eva-tsk-presentation.pptx"
+                download
+                className="btn-ghost"
+              >
+                Скачать
+              </a>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="container-x mt-20 md:mt-40">
         <Reveal>
           <div className="flex flex-wrap items-center justify-between gap-6 border-t border-line pt-8 md:pt-10">
             <h3 className="display text-2xl md:text-4xl leading-[1.2] md:leading-[0.95]">
