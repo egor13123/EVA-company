@@ -144,7 +144,12 @@ export default function AboutPage() {
       </section>
 
       <section className="container-x mt-20 md:mt-40">
-        <PresentationViewer />
+        <PresentationViewer
+          title="Презентация компании"
+          description="Краткое представление ТСК ЕВА в одном файле — опыт, направления работы, подход к поставкам."
+          pdfHref="/eva-tsk-presentation.pdf"
+          downloadHref="/eva-tsk-presentation.pptx"
+        />
       </section>
 
       <section className="container-x mt-20 md:mt-40">
